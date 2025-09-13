@@ -1008,6 +1008,7 @@ a {
 }
 .page--access .main .main-contents .inner .main__list .main__item:nth-child(3) {
   padding-top: 24px;
+  border-bottom: none;
 }
 .page--access .main .main-contents .inner .main__list .main__item .item__icon {
   width: auto;
@@ -1076,9 +1077,6 @@ a {
   }
   .page--access .main .main-contents .inner .main__list {
     width: 100%;
-  }
-  .page--access .main .main-contents .inner .main__list .main__item:nth-child(3) {
-    border-bottom: none;
   }
   .page--access .main .map {
     background-image: url("../images/map2_sp.png");

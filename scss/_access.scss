@@ -61,6 +61,7 @@
 
             &:nth-child(3) {
               padding-top: 24px;
+              border-bottom: none;
             }
 
             .item__icon {
@@ -154,12 +155,6 @@
 
           .main__list {
             width: 100%;
-
-            .main__item {
-              &:nth-child(3) {
-                border-bottom: none;
-              }
-            }
           }
         }
       }
