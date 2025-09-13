@@ -1,0 +1,173 @@
+@use "variables" as *;
+
+.page--access {
+  .main {
+    .fv {
+      background-image: url(../images/Access_Main.jpg);
+      height: 383px;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: overlay;
+      position: relative;
+      z-index: -1;
+
+      .fv__contents {
+        display: inline-flex;
+        padding: 10px 40px 13px 40px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-White);
+        background: rgba(255, 255, 255, 0.7);
+        margin-top: 165px;
+        margin-left: 180px;
+
+        .fv__title {
+          font-size: 36px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+
+    .main-contents {
+      padding: 120px 180px;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .main__title {
+          font-size: 32px;
+          font-weight: 500;
+        }
+
+        .main__list {
+          gap: 24px;
+          width: 66%;
+
+          .main__item {
+            display: flex;
+            border-bottom: 1px solid var(--color-Gray);
+            gap: 24px;
+
+            &:nth-child(1) {
+              padding-bottom: 24px;
+            }
+
+            &:nth-child(2) {
+              padding: 24px 0;
+            }
+
+            &:nth-child(3) {
+              padding-top: 24px;
+            }
+
+            .item__icon {
+              width: auto;
+              height: auto;
+
+              img {
+                max-width: none;
+                height: auto;
+                object-fit: cover;
+              }
+            }
+          }
+
+          .item__contents {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: "Noto Sans JP", sans-serif;
+
+            .item__title {
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    .map {
+      background-image: url("../images/map2 1.jpg");
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(95, 94, 94, 0.3);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background-blend-mode: overlay;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .page--access {
+    .main {
+      .fv {
+        .fv__contents {
+          margin-top: 193.5px;
+          margin-left: 32px;
+
+          .fv__title {
+            font-size: 32px;
+          }
+        }
+      }
+
+      .main-contents {
+        padding: 88px 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .page--access {
+    .main {
+      .fv {
+        height: 300px;
+
+        .fv__contents {
+          padding: 10px 24px 13px 24px;
+          margin-top: 146px;
+          margin-left: 20px;
+
+          .fv__title {
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .main-contents {
+        padding: 56px 20px;
+
+        .inner {
+          flex-direction: column;
+          gap: 32px;
+
+          .main__title {
+            font-size: 28px;
+          }
+
+          .main__list {
+            width: 100%;
+
+            .main__item {
+              &:nth-child(3) {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+
+      .map {
+        background-image: url("../images/map2_sp.png");
+        height: 198px;
+      }
+    }
+  }
+}
