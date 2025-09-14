@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAISE HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="page--main">
+    <header class="header">
+      <div class="header-inner">
+        <div class="header__logo">
+          <img src="images/Logo.png" alt="ロゴ" width="509" height="56" />
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="about.html" class="header-nav__link">会社概要</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="access.html" class="header-nav__link">アクセス</a>
+            </li>
+            <li class="header-nav__cta">
+              <a href="contact.html" class="header-nav__link">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="hamburger__button">
+          <span class="hamburger__line">ハンバーガーメニューのボタン</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="fv">
+        <div class="main-visual__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"></div>
+            <div class="swiper-slide slide2"></div>
+            <div class="swiper-slide slide3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="fv__contents">
+          <h1 class="fv__title">未来と暮らしを<br />豊かにする家づくり</h1>
+          <img
+            src="images/PC_Top_RaiseHome.png"
+            alt="fv"
+            width="675"
+            height="236"
+          />
+        </div>
+
+        <div class="fv__scroll">
+          <span>Scroll</span>
+        </div>
+      </div>
+
+      <section class="service">
+        <div class="inner">
+          <h2 class="section__title">SERVICE</h2>
+          <div class="service__body">
+            <div class="service__contents">
+              <h3 class="service__title">住みよい暮らしをご提案します</h3>
+              <p class="service__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </p>
+            </div>
+            <div class="service__list">
+              <div class="service__item">
+                <a href="">
+                  <img
+                    src="images/Service_Customer.jpg"
+                    alt="個人のお客様"
+                    width="1040"
+                    height="586"
+                  />
+                  <span class="service__text">個人のお客様</span>
+                </a>
+              </div>
+              <div class="service__item box">
+                <a href="">
+                  <img
+                    src="images/Service_Houjin.jpg"
+                    alt="法人のお客様"
+                    width="1040"
+                    height="586"
+                  />
+                  <span class="service__text">法人のお客様</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works section--parallax">
+        <div class="inner">
+          <h2 class="section__title">WORKS</h2>
+          <div class="works__body">
+            <div class="works-image__list">
+              <div class="works__item">
+                <img
+                  src="images/Works_1.jpg"
+                  alt="item1"
+                  id="item1"
+                  width="740"
+                  height="888"
+                  loading="lazy"
+                />
+              </div>
+              <div class="works__item">
+                <img
+                  src="images/Works_2.jpg"
+                  alt="item2"
+                  id="item2"
+                  width="690"
+                  height="436"
+                  loading="lazy"
+                />
+              </div>
+              <div class="works__item">
+                <img
+                  src="images/Works_3.jpg"
+                  alt="item3"
+                  id="item3"
+                  width="690"
+                  height="436"
+                  loading="lazy"
+                />
+              </div>
+              <div class="works__item">
+                <img
+                  src="images/Works_4.jpg"
+                  alt="item4"
+                  id="item4"
+                  width="690"
+                  height="436"
+                  loading="lazy"
+                />
+              </div>
+              <div class="works__item">
+                <img
+                  src="images/Works_5.jpg"
+                  alt="item5"
+                  id="item5"
+                  width="690"
+                  height="436"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- <dialog id="image1" class="work-image__modal">
+              <img
+                src="images/Works_1.jpg"
+                alt="item1"
+                width="740"
+                height="888"
+                loading="lazy"
+              />
+            </dialog>
+            <dialog id="image2" class="work-image__modal">
+              <img
+                src="images/Works_2.jpg"
+                alt="item2"
+                width="690"
+                height="436"
+                loading="lazy"
+              />
+            </dialog>
+            <dialog id="image3" class="work-image__modal">
+              <img
+                src="images/Works_3.jpg"
+                alt="item3"
+                width="690"
+                height="436"
+                loading="lazy"
+              />
+            </dialog>
+            <dialog id="image4" class="work-image__modal">
+              <img
+                src="images/Works_4.jpg"
+                alt="item4"
+                width="690"
+                height="436"
+                loading="lazy"
+              />
+            </dialog>
+            <dialog id="image5" class="work-image__modal">
+              <img
+                src="images/Works_5.jpg"
+                alt="item5"
+                width="690"
+                height="436"
+                loading="lazy"
+              />
+            </dialog> -->
+        </div>
+      </section>
+
+      <section class="company">
+        <div class="inner">
+          <h2 class="section__title">COMPANY</h2>
+          <div class="company__body">
+            <div class="company__picture">
+              <img
+                src="images/Company.jpg"
+                alt="company"
+                width="1120"
+                height="670"
+              />
+            </div>
+            <div class="company__contents">
+              <h3 class="company__title">未来と暮らしを造る会社</h3>
+              <p class="company__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </p>
+              <div class="company__buttons">
+                <a href="about.html" class="company__button"
+                  >会社概要
+                  <span class="arrow"></span>
+                </a>
+                <a href="access.html" class="company__button"
+                  >アクセス
+                  <span class="arrow"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-inner">
+          <h2 class="section__title">CONTACT</h2>
+          <div class="contact__body">
+            <div class="contact__contents">
+              <h3 class="contact__title">
+                家づくりの<br class="sp__br" />無料相談
+              </h3>
+              <p class="contact__text">
+                毎日ご相談を受け付けていますので、<br
+                  class="sp__br"
+                />お気軽にお越しください
+              </p>
+              <div class="contact__buttons">
+                <a href="contact.html"
+                  >お問い合わせ
+                  <span class="arrow"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer__logo">
+          <img
+            src="images/Logo_footer.png"
+            alt="ロゴ"
+            width="509"
+            height="56"
+          />
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="about.html" class="footer-nav__link-text">会社紹介</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="access.html" class="footer-nav__link-text">アクセス</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="contact.html" class="footer-nav__link-text"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-nav__icons">
+            <li class="footer-nav__icon">
+              <a href="" class="footer-nav__link-icon">
+                <img
+                  src="images/akar-icons_x-fill.png"
+                  class="sns-img"
+                  alt="X"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+            <li class="footer-nav__icon">
+              <a href="" class="footer-nav__link-icon">
+                <img
+                  src="images/streamline_instagram-solid.png"
+                  class="sns-img"
+                  alt="instagram"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+            <li class="footer-nav__icon">
+              <a href="" class="footer-nav__link-icon">
+                <img
+                  src="images/mdi_youtube.png"
+                  class="sns-img"
+                  alt="youtube"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright__wrapper">
+        <p class="copyright">©2023RAISE HOME</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@use "variables" as *;
+@use "mixin";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: var(--color-Gray);
+  @include mixin.font;
+  width: 100%;
+  background-color: var(--color-White);
+}
+
+a {
+  text-decoration: none;
+}

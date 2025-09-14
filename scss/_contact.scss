@@ -1,0 +1,264 @@
+@use "variables" as *;
+
+.page--contact {
+  .main {
+    .fv {
+      background-image: url(../images/Contact_Main.jpg);
+      height: 383px;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: overlay;
+      position: relative;
+      z-index: -1;
+
+      .fv__contents {
+        display: inline-flex;
+        padding: 10px 40px 13px 40px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-White);
+        background: rgba(255, 255, 255, 0.7);
+        margin-top: 165px;
+        margin-left: 180px;
+
+        .fv__title {
+          font-size: 36px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+
+    .main-contents {
+      padding: 120px 180px 125px 180px;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+
+        .main__title {
+          font-size: 32px;
+          font-weight: 500;
+        }
+
+        form {
+          width: 560px;
+
+          label,
+          p {
+            font-weight: 700;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+              border-radius: 4px;
+              background: #c54a49;
+              padding: 0 6px;
+              color: var(--color-White);
+              font-size: 12px;
+              font-weight: 700;
+              margin-left: 7px;
+            }
+          }
+
+          input[type="text"],
+          input[type="email"] {
+            padding: 12px 35px 12px 16px;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid var(--color-LightGray);
+            background: var(--color-White);
+            font-family: "Noto Sans JP", serif;
+            margin-bottom: 32px;
+            margin-top: 10px;
+            width: 100%;
+          }
+
+          .radio-group {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+            margin-top: 10px;
+
+            .radio__option {
+              display: flex;
+            }
+
+            label + input {
+              margin-left: 16px;
+            }
+
+            input {
+              margin-right: 5px;
+            }
+
+            label {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+
+          textarea {
+            padding: 12px 34px 111px 16px;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid var(--color-LightGray);
+            background: var(--color-White);
+            font-family: "Noto Sans JP", serif;
+            margin-bottom: 32px;
+            margin-top: 10px;
+            width: 100%;
+          }
+
+          .form__checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+
+            input {
+              margin-right: 5px;
+              border-radius: 2px;
+              border: 1px solid var(--color-Gray);
+            }
+
+            label {
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          button {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-White);
+            font-size: 18px;
+            font-weight: 500;
+            width: 220px;
+            padding: 10px 16px;
+            border: 1px solid var(--color-Gray);
+            background: var(--color-Gray);
+            margin: 0 auto;
+
+            &:hover {
+              background: #f7b000;
+              border: 1px solid #f7b000;
+              transition: all 0.3s ease;
+            }
+
+            .arrow {
+              position: absolute;
+              right: 16px;
+              top: 60%;
+              display: inline-block;
+              width: 17px;
+              height: 1px;
+              margin-bottom: 3px;
+              border-radius: 9999px;
+              background-color: var(--color-Black);
+              background-color: currentColor;
+            }
+
+            .arrow::before {
+              content: "";
+              position: absolute;
+              top: calc(50% - 1px);
+              right: 0;
+              width: 10px;
+              height: 1px;
+              border-radius: 9999px;
+              background-color: var(--color-Black);
+              transform: rotate(45deg);
+              transform-origin: calc(100% - 1px) 50%;
+              background-color: currentColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .page--contact {
+    .main {
+      .fv {
+        .fv__contents {
+          margin-top: 193.5px;
+          margin-left: 32px;
+
+          .fv__title {
+            font-size: 32px;
+          }
+        }
+      }
+
+      .main-contents {
+        padding: 88px 32px;
+
+        .inner {
+          form {
+            input[type="text"],
+            input[type="email"] {
+              padding: 12px 35px 12px 16px;
+            }
+
+            textarea {
+              padding: 12px 34px 111px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .page--contact {
+    .main {
+      .fv {
+        background-image: url(../images/Contact_Main_sp.jpg);
+        height: 300px;
+
+        .fv__contents {
+          padding: 10px 24px 13px 24px;
+          margin-top: 146px;
+          margin-left: 20px;
+
+          .fv__title {
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .main-contents {
+        padding: 56px 20px;
+
+        .inner {
+          flex-direction: column;
+          gap: 32px;
+
+          .main__title {
+            font-size: 28px;
+          }
+
+          form {
+            width: 100%;
+
+            .radio-group {
+              display: grid;
+              width: 190px;
+              grid-template-columns: 1fr 1fr;
+              gap: 8px;
+              column-gap: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

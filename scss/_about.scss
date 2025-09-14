@@ -1,0 +1,236 @@
+@use "variables" as *;
+
+.page--company {
+  .main {
+    .fv {
+      background-image: url(../images/Company_Main.jpg);
+      height: 383px;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: overlay;
+      position: relative;
+      z-index: -1;
+
+      .fv__contents {
+        display: inline-flex;
+        padding: 10px 40px 13px 40px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-White);
+        background: rgba(255, 255, 255, 0.7);
+        margin-top: 165px;
+        margin-left: 180px;
+
+        .fv__title {
+          font-size: 36px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .main-contents {
+    padding: 120px 180px;
+
+    .inner {
+      .inner__item {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 120px;
+
+        .item__contents {
+          width: 50%;
+
+          .item__title {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 24px;
+          }
+
+          .item__text {
+            line-height: 175%;
+          }
+        }
+
+        .item__picture {
+          width: 50%;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .inner__desc {
+        display: flex;
+        justify-content: space-between;
+
+        .desc__title {
+          font-size: 32px;
+          font-weight: 500;
+        }
+
+        .desc__contents {
+          border-top: 1px solid var(--color-Gray);
+          width: 66%;
+
+          tbody {
+            th {
+              width: 160px;
+              height: 64px;
+              font-size: 16px;
+              font-weight: 700;
+              padding: 10px;
+              text-align: center;
+              align-items: center;
+              background: #e7e3df;
+              border-bottom: 1px solid var(--color-Gray);
+            }
+
+            td {
+              font-family: "Noto Sans JP", sans-serif;
+              padding-left: 40px;
+              border-bottom: 1px solid var(--color-Gray);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .page--company {
+    .main {
+      .fv {
+        .fv__contents {
+          margin-top: 193.5px;
+          margin-left: 32px;
+
+          .fv__title {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    .main-contents {
+      padding: 88px 32px;
+
+      .inner {
+        .inner__item {
+          gap: 24px;
+          margin-bottom: 88px;
+
+          .item__contents {
+            width: 50%;
+          }
+
+          .item__picture {
+            width: 50%;
+            height: auto;
+          }
+        }
+
+        .inner__desc {
+          .desc__contents {
+            width: 77%;
+
+            tbody {
+              td {
+                padding-left: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .page--company {
+    .main {
+      .fv {
+        height: 300px;
+
+        .fv__contents {
+          padding: 10px 24px 13px 24px;
+          margin-top: 146px;
+          margin-left: 20px;
+
+          .fv__title {
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .main-contents {
+      padding: 56px 20px 54.855px 20px;
+
+      .inner {
+        .inner__item {
+          flex-direction: column;
+          margin-bottom: 56px;
+
+          .item__contents {
+            width: 100%;
+
+            .item__title {
+              font-size: 28px;
+              font-weight: 500;
+              margin-bottom: 24px;
+            }
+          }
+
+          .item__picture {
+            width: 100%;
+          }
+        }
+
+        .inner__desc {
+          flex-direction: column;
+          gap: 32px;
+
+          .desc__title {
+            font-size: 28px;
+            font-weight: 500;
+          }
+
+          .desc__contents {
+            width: 100%;
+
+            tbody {
+              th {
+                border-bottom: none;
+              }
+
+              td {
+                height: 64px;
+                padding: 10px;
+                text-align: center;
+              }
+
+              tbody,
+              tr,
+              th,
+              td {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
